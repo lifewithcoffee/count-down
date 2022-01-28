@@ -2,5 +2,23 @@
   "manifest_version": 3,
   "name": "Count Down Days",
   "version": "1.0",
-  "description": "Takes a date input and displays the number of days left until the given date"
+  "description": "Takes a date input and displays the number of days left until the given date",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+      "default_popup": "content/popup.html",
+      "default_icon": {
+        // "16": "images/icon16.ico",    
+        // "32": "images/icon32.ico",
+        // "48": "images/icon48.ico",
+        // "64": "images/icon64.ico",
+        // "128": "images/icon128.ico"
+        "16": "/images/timer.png",
+        "128": "/images/timer.png",
+        "48": "/images/timer.png",
+        "256": "/images/timer.png"
+      }
+    },
+  "permissions": ["activeTab" ,"storage", "scripting"]
 }
