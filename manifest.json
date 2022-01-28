@@ -1,0 +1,6 @@
+{
+  "manifest_version": 3,
+  "name": "Count Down Days",
+  "version": "1.0",
+  "description": "Takes a date input and displays the number of days left until the given date"
+}
